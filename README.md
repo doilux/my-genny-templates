@@ -1,5 +1,21 @@
 # my-genny-templates
 
+## How to Develop
+
+1. install statik
+    ```bash
+    go get -u github.com/rakyll/statik
+    ```
+1. create directory and tmpl.go at tmpl directory
+1. add directory name to main.go
+    ```go
+    var types = []string{
+        "pointer_slice",
+        "slice",
+        /* add new template direcotry name here */
+    }
+    ```
+
 ## Usage
 
 1. `go get`
